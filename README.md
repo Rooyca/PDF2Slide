@@ -1,19 +1,27 @@
+![PDFVision](public/icon-2.png)
+
 # PDF Vision
+## About v2.0
 
-This first version does not support uploading files and only displays images that are in /public/images. The idea is to implement in version two the option to upload files (pdf's) and then convert them into images that can be display by the platform. 
+It's currently in development and you are strongly encouraged to help us improve it. There are some things that need to be added:
 
-## About v2
+- [ ] Button to delete slides.
+- [ ] Charging text when loading slides for the first time.
+- [ ] Home screan with a project presentation.
+- [ ] Button to share the slides.
+- [ ] Button to save the slides.
+- [ ] Button to zoom in and out.
+- [ ] Option to add a personalize button (Social Network, Email, etc).
+- [ ] Translation to other spanish.
 
-It's currently in development and you can check out the progress here: [PDFVision@customizable](https://github.com/Rooyca/pdf-visual/tree/customizable)
+### Toolts used on v2.0
 
-### Toolts of v2
-
-There are some tools that I am currently using in version 2.0. Here is the list:
+Currently using in version 2.0:
 
 - Cloudinary (to store images)
 - Celery (to make asynchronous tasks)
-- Redis (to store queues and results)
-- MongoDB (to store information about pdf and url's of images)
+- Redis (to store queues)
+- MongoDB (to store results)
 - FastAPI (as a backend)
 - Vue 3
 
