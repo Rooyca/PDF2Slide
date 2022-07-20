@@ -1,6 +1,7 @@
 ![PDFVision](public/icon-2.png)
 
 # PDF Vision
+- Check out the Back-End [here](https://github.com/Rooyca/PDF-Vision-BE).
 ## About v2.0
 
 It's currently in development and you are strongly encouraged to help us improve it. There are some things that need to be added:
