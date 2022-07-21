@@ -27,14 +27,14 @@ const handleSubmit = () => {
   }
   const formData = new FormData();
   formData.append("file", myFile.value.files[0]);
-  formData.append("slides_name", name.value);
-  formData.append("owner_email", email.value);
 
   axios
     .post("https://pdfvisionback.herokuapp.com/files/", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         "accept": "application/json",
+        "ownerEmail": email.value,
+        "slidesName": name.value,
       },
     })
     .then(res => {

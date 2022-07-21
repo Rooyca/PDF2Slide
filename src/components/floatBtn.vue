@@ -19,7 +19,7 @@ const route = useRoute();
 	<i class="fa-solid fa-clipboard iconobtn"></i>
   </div>
   <div class="nd1 nds" data-toggle="tooltip" data-placement="left" data-original-title="upload">
-    <router-link to="/settings"><i class="fa-solid fa-file-arrow-up iconobtn"></i></router-link>
+    <router-link to="/"><i class="fa-solid fa-file-arrow-up iconobtn"></i></router-link>
   </div>
 
   <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="plus" >
