@@ -1,11 +1,14 @@
 <script setup>
 import axios from "axios";
-import { ref, reactive, onMounted } from "vue";
+import { ref } from "vue";
+import { useRouter } from "vue-router";
+
+const route = useRouter();
 
 const name = ref("");
 const email = ref("");
 const myFile = ref(null);
-const idResponse = ref("");
+const upSlide = ref(true);
 
 const handleSubmit = () => {
   if (name.value.length < 3) {
@@ -27,6 +30,8 @@ const handleSubmit = () => {
   }
   const formData = new FormData();
   formData.append("file", myFile.value.files[0]);
+  
+  upSlide.value = false;
 
   axios
     .post("https://pdfvisionback.herokuapp.com/files/", formData, {
@@ -38,7 +43,8 @@ const handleSubmit = () => {
       },
     })
     .then(res => {
-      idResponse.value = res.data.id_task;
+      route.push("/slides/" + res.data.id_task);
+      isLoading.value = false;
     })
     .catch(err => {
       console.log(err);
@@ -59,7 +65,7 @@ const handleSubmit = () => {
       </div>
     </div>
     <div class="right-container">
-      <header v-if="!idResponse">
+      <header v-if="upSlide">
         <h1 style="font-family: 'Cormorant SC', serif; color: #0e1318">
           Setting up your slides
         </h1>
@@ -84,18 +90,15 @@ const handleSubmit = () => {
           </div>
         </div>
       </header>
-      <header v-if="idResponse">
+      <header v-if="!upSlide">
         <h1 style="font-family: 'Cormorant SC', serif; color: #0e1318">
-          Your slides are ready!
+          Your slides are being processed... <br>
+          <span style="text-transform:lowercase; font-family:serif; font-weight: 100; font-size: 12px;">
+            We will send you an email when they are ready.
+            </span>
+            <p></p>
+            <i class="fa-solid fa-spinner fa-spin"></i>
         </h1>
-        <div class="set">
-          <router-link :to="'/slides/'+idResponse">
-            <button class="btn-slides">
-              <i class="fa-solid fa-eye" style="margin-right:7px"></i>
-              <span>View Slides</span>
-            </button>
-          </router-link>
-        </div>
       </header>
       <footer>
         <div class="set">

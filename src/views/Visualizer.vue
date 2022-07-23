@@ -80,7 +80,7 @@ const progress = reactive({
 
 <style>
 .cardImage {
-  height: 96vh;
+  height: 94vh;
 }
 
 .btnNavegacion {
@@ -135,7 +135,7 @@ const progress = reactive({
   .cardImage {
     width: 47vh;
     height: auto;
-    margin-top: 20vh;
+    margin-top: 1vh;
   }
 
   .progress {

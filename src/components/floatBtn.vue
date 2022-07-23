@@ -13,7 +13,7 @@ const route = useRoute();
 <template>
 <div id="container-floating">
   <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="questions">
-    <a href="https://github.com/Rooyca/PDF-Vision" target="_target"><i class="fa-solid fa-circle-question iconobtn"></i></a>
+    <a href="https://github.com/Rooyca/PDF-Vision" target="_target"><i class="fa-solid fa-circle-question iconobtn q"></i></a>
   </div>
   <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="copy" @click="copyToClipboard">
 	<i class="fa-solid fa-clipboard iconobtn"></i>
@@ -34,7 +34,11 @@ const route = useRoute();
 .iconobtn{
   font-size: 19px;
   color: #ffffff;
-  margin-top: 23.7%;
+  margin-left: 32%;
+  margin-top: 25%;
+}
+.q{
+  margin-left: 27%;
 }
 
 #floating-button{
@@ -92,6 +96,7 @@ const route = useRoute();
   width: 100%;
   font-size: 21px;
   margin-top: 30%;
+  margin-left: 30%;
   transform: rotateZ(-70deg);
   transition: all 0.3s;
   animation: edit-out 0.3s;
@@ -141,6 +146,7 @@ const route = useRoute();
   animation-delay: 0.2s;
     animation: bounce-out-nds 0.3s linear;
   animation-fill-mode:  forwards;
+  
 }
 
 .nd3{
@@ -158,16 +164,6 @@ const route = useRoute();
   bottom: 230px;
   animation-delay: 0.1s;
     animation: bounce-out-nds 0.1s linear;
-  animation-fill-mode:  forwards;
-}
-
-.nd5{
-  background-image: url('https://lh3.googleusercontent.com/-X-aQXHatDQY/Uy86XLOyEdI/AAAAAAAAAF0/TBEZvkCnLVE/w140-h140-p/fb3a11ae-1fb4-4c31-b2b9-bf0cfa835c27');
-  background-size: 100%;
-  right: 40px;
-  bottom: 300px;
-  animation-delay: 0.08s;
-  animation: bounce-out-nds 0.1s linear;
   animation-fill-mode:  forwards;
 }
 
@@ -195,16 +191,6 @@ const route = useRoute();
 }
 #container-floating:hover .nd5{
   animation-delay: 0.2s;
-}
-
-.reminder{
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  line-height: 40px;
 }
 </style>
 
