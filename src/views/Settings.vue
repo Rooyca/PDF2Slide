@@ -34,7 +34,7 @@ const handleSubmit = () => {
   upSlide.value = false;
 
   axios
-    .post("https://pdfvisionback.herokuapp.com/files/", formData, {
+    .post("https://pdf-be.fly.dev/files/", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         "accept": "application/json",
@@ -57,7 +57,7 @@ const handleSubmit = () => {
     <div class="left-container">
       <h1 style="color: white">
         <i class="fa-solid fa-eye"></i>
-        PDFVision
+        PDF2Slide
       </h1>
       <div class="puppy">
         <img
@@ -103,8 +103,9 @@ const handleSubmit = () => {
       <footer>
         <div class="set">
           <a id="back" href="https://github.com/rooyca" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a id="back" href="https://twitter.com/rroyca" target="_blank"><i class="fa-brands fa-twitter"></i></a>
           <a id="back" href="https://t.me/seiseiseis" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+          <a id="back" href="https://mas.to/@rooyca" target="_blank"><i class="fa-brands fa-mastodon"></i></a>
+          <a id="back" href="https://ko-fi.com/rooyca" target="_blank"><i class="fa-solid fa-mug-saucer"></i></a>
         </div>
       </footer>
     </div>

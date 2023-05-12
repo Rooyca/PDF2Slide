@@ -17,7 +17,7 @@ const progressNumber = reactive({
 
 onMounted(() => {
   axios
-  .get('https://pdfvisionback.herokuapp.com/files/' + route.params.id)
+  .get('https://pdf-be.fly.dev/files/' + route.params.id)
   .then(res => {
     listaImagenes.images =  res.data.result;
     isLoaded.value = true;
