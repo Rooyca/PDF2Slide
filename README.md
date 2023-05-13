@@ -2,37 +2,41 @@
   <img src="public/icon-2.png" width="300" />
 </p>
 
+# PDF2Slide - Convert PDF to Slides (Frontend)
 
-# PDF Vision
-- Check out the Back-End [here](https://github.com/Rooyca/PDF-Vision-BE).
+![Netlify Status](https://img.shields.io/github/deployments/rooyca/pdf2slide/production?label=Vercel&logo=Vercel)
 
-## Example
+## Table of Contents
 
-Here is one example (~the first time it will take a little to open because the backend is on Heroku~):
+- [About](#about)
+- [Demo](#demo)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Development](#development)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-- ~https://pdf.rooyca.xyz/#/slides/02bafc62-0928-11ed-92c2-c6d41f408d28~
-- https://portafolio.ankladigital.com/
+## About
 
-![Example](https://res.cloudinary.com/rooyca/image/upload/v1658848988/asdo_rvntrw.png)
+This is the frontend of the project PDF2Slide. It's a tool that allows you to convert PDF files to slides. It's currently in development and you are strongly encouraged to help us improve it.
 
-## About v2.0
+- Check out the Back-end [here](https://github.com/Rooyca/PDF-Vision-BE)
 
-It's currently in development and you are strongly encouraged to help us improve it. There are some things that need to be added:
+## Demo
 
-- [x] Button to delete slides.
-- [ ] Charging text when loading slides for the first time.
-- [ ] Home screan with a project presentation.
-- [ ] Button to share the slides.
-- [ ] Button to save the slides.
-- [ ] Button to zoom in and out.
-- [ ] Option to add a personalize button (Social Network, Email, etc).
-- [ ] Translation to other language (Spanish).
+- You can see a demo [here](https://pdf-2-slide.netlify.app/).
+- Or you can see a showcase [here](https://portafolio.ankladigital.com/)
 
-### Toolts used on v2.0
+## Screenshots
 
-Currently using in version 2.0:
+![Example](pdf2slide_screen.gif)
 
-- ~Cloudinary (to store images)~
+## Technologies Used
+
 - Celery (to make asynchronous tasks)
 - Redis (to store queues)
 - MongoDB (to store results)
@@ -41,4 +45,40 @@ Currently using in version 2.0:
 - [NEW] Docker
 - [NEW] https://transfer.sh/ (to store the images)
 - [NEW] https://fly.io (to deploy)
+
+## Features
+
+- [x] Convert PDF to Slides.
+- [x] Delete slides.
+- [ ] Charging text when loading slides for the first time.
+- [ ] Download slides.
+
+## Development
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+- Clone the repository
+- Run `npm install` to install all the dependencies
+- Run `npm run dev` to start the development server
+- Go to `localhost:3000` to view the app
+
+## Usage
+
+- "If you want to delete a slide later, you must make sure to save the `delete key`, then you can go to the url `http://localhost:3000/del/{slide_id}/{delete_key}`
+
+## Contributing
+
+Contributions are always welcome! <3
+
+## Contact
+
+You can contact me at:
+
+- [Mas.to](https://mas.to/@rooyca)
+- [Telegram](https://t.me/seiseiseis)
 

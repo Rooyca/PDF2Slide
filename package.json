@@ -1,5 +1,5 @@
 {
-  "name": "pdf-visual",
+  "name": "pdf-2-slide",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "firebase": "^9.9.0",
     "vue": "^3.2.25",
     "vue-router": "^4.1.2"
   },
