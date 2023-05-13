@@ -30,19 +30,21 @@ const handleSubmit = () => {
   }
   const formData = new FormData();
   formData.append("file", myFile.value.files[0]);
+  formData.append("owner_email", email.value);
+  formData.append("slides_name", name.value);
   
   upSlide.value = false;
 
   axios
-    .post("https://pdf-be.fly.dev/files/", formData, {
+    .post("https://pdf-2-slide-be.fly.dev/files/", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         "accept": "application/json",
-        "ownerEmail": email.value,
-        "slidesName": name.value,
       },
     })
     .then(res => {
+      alert("Your SlideID is: "+res.data.id_task)
+      alert('Your delete key is: '+res.data.SAVE_THIS_delete_key)
       route.push("/slides/" + res.data.id_task);
       isLoading.value = false;
     })
@@ -61,7 +63,7 @@ const handleSubmit = () => {
       </h1>
       <div class="puppy">
         <img
-          src="/icon-2.png" />
+          src="/icon-2.webp" />
       </div>
     </div>
     <div class="right-container">

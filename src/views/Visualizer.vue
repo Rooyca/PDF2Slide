@@ -17,8 +17,9 @@ const progressNumber = reactive({
 
 onMounted(() => {
   axios
-  .get('https://pdf-be.fly.dev/files/' + route.params.id)
+  .get('https://pdf-2-slide-be.fly.dev/files/' + route.params.id)
   .then(res => {
+    console.log(route.params.key)
     listaImagenes.images =  res.data.result;
     isLoaded.value = true;
     progressNumber.width = (paginaActual.value / listaImagenes.images.length) * 100 + "%";
