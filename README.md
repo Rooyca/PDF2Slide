@@ -19,23 +19,26 @@ Here is one example (~the first time it will take a little to open because the b
 
 It's currently in development and you are strongly encouraged to help us improve it. There are some things that need to be added:
 
-- [ ] Button to delete slides.
+- [x] Button to delete slides.
 - [ ] Charging text when loading slides for the first time.
 - [ ] Home screan with a project presentation.
 - [ ] Button to share the slides.
 - [ ] Button to save the slides.
 - [ ] Button to zoom in and out.
 - [ ] Option to add a personalize button (Social Network, Email, etc).
-- [ ] Translation to other spanish.
+- [ ] Translation to other language (Spanish).
 
 ### Toolts used on v2.0
 
 Currently using in version 2.0:
 
-- Cloudinary (to store images)
+- ~Cloudinary (to store images)~
 - Celery (to make asynchronous tasks)
 - Redis (to store queues)
 - MongoDB (to store results)
-- FastAPI (as a backend)
-- Vue 3
+- FastAPI (as backend)
+- Vue 3 (as frontend)
+- [NEW] Docker
+- [NEW] https://transfer.sh/ (to store the images)
+- [NEW] https://fly.io (to deploy)
 
