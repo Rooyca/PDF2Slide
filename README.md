@@ -1,4 +1,7 @@
-![PDFVision](public/icon-2.png)
+<p align="center">
+  <img src="public/icon-2.png" width="300" />
+</p>
+
 
 # PDF Vision
 - Check out the Back-End [here](https://github.com/Rooyca/PDF-Vision-BE).
