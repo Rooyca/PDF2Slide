@@ -2,6 +2,10 @@
 import axios from "axios";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import { useToast } from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
+
+const $toast = useToast();
 
 const route = useRouter();
 
@@ -12,20 +16,20 @@ const upSlide = ref(true);
 
 const handleSubmit = () => {
   if (name.value.length < 3) {
-    alert("Please enter a valid Slides name. It must be at least 3 characters long.");
+    $toast.error("Please enter a valid Slides name. It must be at least 3 characters long.");
     return;
   } 
   if (email.value === "") {
-    alert("Please enter your email");
+    $toast.error("Please enter your email");
     return;
   }
   if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
-    alert("Please enter a valid email");
+    $toast.error("Please enter a valid email");
     return;
   } 
 
   if (!myFile.value.files[0]) {
-    alert("Please select a PDF");
+    $toast.error("Please select a PDF");
     return;
   }
   const formData = new FormData();
@@ -43,8 +47,8 @@ const handleSubmit = () => {
       },
     })
     .then(res => {
-      alert("Your SlideID is: "+res.data.id_task)
-      alert('Your delete key is: '+res.data.SAVE_THIS_delete_key)
+      $toast.success("Your SlideID is: "+res.data.id_task, {'position': 'bottom-left', 'duration': 10000, 'dismissible': false});
+      $toast.success('Your delete key is: '+res.data.SAVE_THIS_delete_key, {'position': 'bottom-left', 'duration': 30000, 'dismissible': false});
       route.push("/slides/" + res.data.id_task);
       isLoading.value = false;
     })
@@ -95,7 +99,7 @@ const handleSubmit = () => {
       <header v-if="!upSlide">
         <h1 style="font-family: 'Cormorant SC', serif; color: #0e1318">
           Your slides are being processed... <br>
-          <span style="text-transform:lowercase; font-family:serif; font-weight: 100; font-size: 12px;">
+          <span style="text-transform:capitalize; font-family:serif; font-weight: 100; font-size: 12px;">
             We will send you an email when they are ready.
             </span>
             <p></p>

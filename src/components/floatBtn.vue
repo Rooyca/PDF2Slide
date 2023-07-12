@@ -1,11 +1,15 @@
 <script setup>
 import { useRoute } from 'vue-router';
+import { useToast } from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
+
+const $toast = useToast();
 
 const route = useRoute();
 
  const copyToClipboard = async () => {
    await navigator.clipboard.writeText(route.path);
-   alert('Url copied to clipboard');
+   $toast.success('URL copied to clipboard', {'position': 'bottom-left'});
  }
 </script>
 
