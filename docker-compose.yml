@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  app:
+    image: rooyca/pdf2slide-be
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+      - mongo
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379
+      - CELERY_RESULT_BACKEND=redis://redis:6379
+      - MONGO=mongodb://mongo:27017
+      - SMTP_SERVER=smtp-relay.sendinblue.com
+      - SMTP_USER=user@mail.com
+      - SMTP_PASS=password
+      - SMTP_PORT=587
+      - SENDER=sender@mail.com
+      - S3_ENDPOINT=https://11111.r2.cloudflarestorage.com
+      - KEY_ID=id
+      - KEY_SECRET=secret
+      - URL_STORAGE=https://example.com/
+      - URL_FRONTEND=http://localhost/
+    command: bash -c "celery -A tasks worker --loglevel=info & uvicorn main:app --host 0.0.0.0 --port 8000"
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+  mongo:
+    image: mongo:4.4.6
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/db:/data/db
+
+  frontend:
+    image: rooyca/pdf2slide-fe
+    ports:
+      - "80:80"
+    depends_on:
+      - app

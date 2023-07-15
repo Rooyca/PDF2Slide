@@ -5,8 +5,9 @@ import { useRouter } from "vue-router";
 import { useToast } from 'vue-toast-notification';
 import 'vue-toast-notification/dist/theme-sugar.css';
 
-const $toast = useToast();
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
+const $toast = useToast();
 const route = useRouter();
 
 const name = ref("");
@@ -40,7 +41,7 @@ const handleSubmit = () => {
   upSlide.value = false;
 
   axios
-    .post("https://pdf-2-slide-be.fly.dev/files/", formData, {
+    .post(BASE_URL, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         "accept": "application/json",

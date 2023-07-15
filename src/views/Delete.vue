@@ -5,6 +5,8 @@ import { ref } from 'vue';
 import { useToast } from 'vue-toast-notification';
 import 'vue-toast-notification/dist/theme-sugar.css';
 
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+
 const $toast = useToast();
 
 const route = useRoute();
@@ -14,7 +16,7 @@ const loading = ref(false);
 const handleDelete = () => {
     loading.value = true;
     axios
-    .delete('https://pdf-2-slide-be.fly.dev/files/' + route.params.id + '?dk=' + route.params.key)
+    .delete(BASE_URL + route.params.id + '?dk=' + route.params.key)
     .then(res => {
       console.log(res.data.result);
       $toast.success("Slide deleted!")

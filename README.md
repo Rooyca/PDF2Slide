@@ -2,6 +2,9 @@
   <img src="public/icon-2.png" width="300" />
 </p>
 
+![Docker backend](https://img.shields.io/docker/pulls/rooyca/pdf2slide-be?label=Backend)
+![Docker frontend](https://img.shields.io/docker/pulls/rooyca/pdf2slide-fe?label=Frontend)
+
 # PDF2Slide - Convert PDF to Slides (Frontend)
 
 ![Netlify Status](https://img.shields.io/github/deployments/rooyca/pdf2slide/production?label=Vercel&logo=Vercel)
@@ -26,14 +29,12 @@ This is the frontend of the project PDF2Slide. It's a tool that allows you to co
 
 - Check out the Back-end [here](https://github.com/Rooyca/PDF-Vision-BE)
 
+![Example](pdf2slide_screen.gif)
+
 ## Demo
 
 - You can see a demo [here](https://pdf-2-slide.netlify.app/).
 - Or you can see a showcase [here](https://portafolio.ankladigital.com/)
-
-## Screenshots
-
-![Example](pdf2slide_screen.gif)
 
 ## Technologies Used
 
@@ -52,6 +53,32 @@ This is the frontend of the project PDF2Slide. It's a tool that allows you to co
 - [x] Delete slides.
 - [ ] Charging text when loading slides for the first time.
 - [ ] Download slides.
+
+## Docker
+
+### Variables
+
+- You should edit the file `docker-compose.yml` and change the following variables:
+
+```bash
+- SMTP_SERVER=smtp-relay.sendinblue.com
+- SMTP_USER=user@mail.com
+- SMTP_PASS=password
+- SMTP_PORT=587
+- SENDER=sender@mail.com
+- S3_ENDPOINT=https://11111.r2.cloudflarestorage.com
+- KEY_ID=id
+- KEY_SECRET=secret
+- URL_STORAGE=https://example.com/
+```
+
+For `S3_ENDPOINT` you can use the cloudflare storage or any other storage that supports S3.
+
+- After that you can run the following command:
+
+```bash
+docker-compose up -d
+```
 
 ## Development
 

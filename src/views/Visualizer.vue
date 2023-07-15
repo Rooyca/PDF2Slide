@@ -4,6 +4,8 @@ import { useRoute } from 'vue-router';
 import axios from 'axios';
 import floatBtn from '../components/floatBtn.vue';
 
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+
 const route = useRoute();
 const listaImagenes = reactive({images:[]});
 const paginaActual = ref(1);
@@ -17,9 +19,8 @@ const progressNumber = reactive({
 
 onMounted(() => {
   axios
-  .get('https://pdf-2-slide-be.fly.dev/files/' + route.params.id)
+  .get(BASE_URL + route.params.id)
   .then(res => {
-    console.log(route.params.key)
     listaImagenes.images =  res.data.result;
     isLoaded.value = true;
     progressNumber.width = (paginaActual.value / listaImagenes.images.length) * 100 + "%";
