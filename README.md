@@ -2,12 +2,11 @@
   <img src="public/icon-2.png" width="300" />
 </p>
 
-![Docker backend](https://img.shields.io/docker/pulls/rooyca/pdf2slide-be?label=Backend)
-![Docker frontend](https://img.shields.io/docker/pulls/rooyca/pdf2slide-fe?label=Frontend)
-
 # PDF2Slide - Convert PDF to Slides (Frontend)
 
 ![Netlify Status](https://img.shields.io/github/deployments/rooyca/pdf2slide/production?label=Vercel&logo=Vercel)
+![Docker backend](https://img.shields.io/docker/pulls/rooyca/pdf2slide-be?label=Backend)
+![Docker frontend](https://img.shields.io/docker/pulls/rooyca/pdf2slide-fe?label=Frontend)
 
 ## Table of Contents
 
