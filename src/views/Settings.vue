@@ -24,7 +24,7 @@ const handleSubmit = () => {
     $toast.error("Please enter your email");
     return;
   }
-  if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+  if (!/^\w+([\.-]?\w+)+\@\w+([\.-]?\w+)+\.\w{2,3}+$/.test(email.value)) {
     $toast.error("Please enter a valid email");
     return;
   } 
