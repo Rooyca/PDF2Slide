@@ -24,10 +24,12 @@ const handleSubmit = () => {
     $toast.error("Please enter your email");
     return;
   }
-  if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/i.test(email.value)) {
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  if (!emailPattern.test(email.value)) {
     $toast.error("Please enter a valid email");
     return;
-  } 
+  }
 
   if (!myFile.value.files[0]) {
     $toast.error("Please select a PDF");
