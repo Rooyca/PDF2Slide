@@ -4,7 +4,6 @@
 
 # PDF2Slide - Convert PDF to Slides (Frontend)
 
-![Netlify Status](https://img.shields.io/github/deployments/rooyca/pdf2slide/production?label=Vercel&logo=Vercel)
 ![Docker backend](https://img.shields.io/docker/pulls/rooyca/pdf2slide-be?label=Backend)
 ![Docker frontend](https://img.shields.io/docker/pulls/rooyca/pdf2slide-fe?label=Frontend)
 
