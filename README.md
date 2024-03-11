@@ -32,7 +32,7 @@ This is the frontend of the project PDF2Slide. It's a tool that allows you to co
 
 ## Demo
 
-- You can see a demo [here](https://pdf-2-slide.netlify.app/).
+- ~You can see a demo here.~
 - Or you can see a showcase [here](https://portafolio.ankladigital.com/)
 
 ## Technologies Used
@@ -106,5 +106,5 @@ Contributions are always welcome! <3
 You can contact me at:
 
 - [Mas.to](https://mas.to/@rooyca)
-- [Telegram](https://t.me/seiseiseis)
+- [Telegram](https://t.me/yarocc)
 
