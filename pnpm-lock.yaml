@@ -22,8 +22,8 @@ importers:
         version: 3.1.1(vue@3.2.25)
     devDependencies:
       '@vitejs/plugin-vue':
-        specifier: ^2.3.3
-        version: 2.3.3(vite@2.9.18(sass@1.53.0))(vue@3.2.25)
+        specifier: ^2.3.4
+        version: 2.3.4(vite@2.9.18(sass@1.53.0))(vue@3.2.25)
       sass:
         specifier: ^1.53.0
         version: 1.53.0
@@ -56,8 +56,8 @@ packages:
     cpu: [loong64]
     os: [linux]
 
-  '@vitejs/plugin-vue@2.3.3':
-    resolution: {integrity: sha512-SmQLDyhz+6lGJhPELsBdzXGc+AcaT8stgkbiTFGpXPe8Tl1tJaBw1A6pxDqDuRsVkD8uscrkx3hA7QDOoKYtyw==}
+  '@vitejs/plugin-vue@2.3.4':
+    resolution: {integrity: sha512-IfFNbtkbIm36O9KB8QodlwwYvTEsJb4Lll4c2IwB3VHc2gie2mSPtSzL0eYay7X2jd/2WX02FjSGTWR6OPr/zg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.5.10
@@ -442,7 +442,7 @@ snapshots:
   '@esbuild/linux-loong64@0.14.54':
     optional: true
 
-  '@vitejs/plugin-vue@2.3.3(vite@2.9.18(sass@1.53.0))(vue@3.2.25)':
+  '@vitejs/plugin-vue@2.3.4(vite@2.9.18(sass@1.53.0))(vue@3.2.25)':
     dependencies:
       vite: 2.9.18(sass@1.53.0)
       vue: 3.2.25
