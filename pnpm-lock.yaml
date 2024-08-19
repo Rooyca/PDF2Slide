@@ -23,13 +23,13 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^2.3.4
-        version: 2.3.4(vite@2.9.18(sass@1.53.0))(vue@3.2.25)
+        version: 2.3.4(vite@2.9.18(sass@1.77.8))(vue@3.2.25)
       sass:
-        specifier: ^1.53.0
-        version: 1.53.0
+        specifier: ^1.77.8
+        version: 1.77.8
       vite:
         specifier: ^2.9.18
-        version: 2.9.18(sass@1.53.0)
+        version: 2.9.18(sass@1.77.8)
 
 packages:
 
@@ -364,9 +364,9 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
 
-  sass@1.53.0:
-    resolution: {integrity: sha512-zb/oMirbKhUgRQ0/GFz8TSAwRq2IlR29vOUJZOx0l8sV+CkHUfHa4u5nqrG+1VceZp7Jfj59SVW9ogdhTvJDcQ==}
-    engines: {node: '>=12.0.0'}
+  sass@1.77.8:
+    resolution: {integrity: sha512-4UHg6prsrycW20fqLGPShtEvo/WyHRVRHwOP4DzkUrObWoWI05QBSfzU71TVB7PFaL104TwNaHpjlWXAZbQiNQ==}
+    engines: {node: '>=14.0.0'}
     hasBin: true
 
   source-map-js@1.0.2:
@@ -442,9 +442,9 @@ snapshots:
   '@esbuild/linux-loong64@0.14.54':
     optional: true
 
-  '@vitejs/plugin-vue@2.3.4(vite@2.9.18(sass@1.53.0))(vue@3.2.25)':
+  '@vitejs/plugin-vue@2.3.4(vite@2.9.18(sass@1.77.8))(vue@3.2.25)':
     dependencies:
-      vite: 2.9.18(sass@1.53.0)
+      vite: 2.9.18(sass@1.77.8)
       vue: 3.2.25
 
   '@vue/compiler-core@3.2.25':
@@ -722,7 +722,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.2
 
-  sass@1.53.0:
+  sass@1.77.8:
     dependencies:
       chokidar: 3.5.3
       immutable: 4.3.1
@@ -742,7 +742,7 @@ snapshots:
     dependencies:
       is-number: 7.0.0
 
-  vite@2.9.18(sass@1.53.0):
+  vite@2.9.18(sass@1.77.8):
     dependencies:
       esbuild: 0.14.54
       postcss: 8.4.31
@@ -750,7 +750,7 @@ snapshots:
       rollup: 2.77.3
     optionalDependencies:
       fsevents: 2.3.2
-      sass: 1.53.0
+      sass: 1.77.8
 
   vue-router@4.1.2(vue@3.2.25):
     dependencies:
