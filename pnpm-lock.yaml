@@ -18,8 +18,8 @@ importers:
         specifier: ^4.4.3
         version: 4.4.3(vue@3.5.3)
       vue-toast-notification:
-        specifier: ^3.1.1
-        version: 3.1.1(vue@3.5.3)
+        specifier: ^3.1.2
+        version: 3.1.2(vue@3.5.3)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^2.3.4
@@ -426,8 +426,8 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
-  vue-toast-notification@3.1.1:
-    resolution: {integrity: sha512-DXEE38NxXFCNinKI+MyZBMWsaqE9Lwxg9GkMVkzKXY1ACCeNztBXuUiSvKMe36dnnYd1qnlP+cWNSvHlkt5xNA==}
+  vue-toast-notification@3.1.2:
+    resolution: {integrity: sha512-oNRL/W9aaHoeScp+iTIW7k09vM16/+8aptp2maa+7qTB43JuxmAgKdXKFYtf+uvSNOYYq2BIWgLCeJ61pwom/A==}
     engines: {node: '>=12.15.0'}
     peerDependencies:
       vue: ^3.0
@@ -779,7 +779,7 @@ snapshots:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.3
 
-  vue-toast-notification@3.1.1(vue@3.5.3):
+  vue-toast-notification@3.1.2(vue@3.5.3):
     dependencies:
       vue: 3.5.3
 
