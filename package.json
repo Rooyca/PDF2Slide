@@ -11,7 +11,7 @@
     "axios": "^1.7.7",
     "vue": "^3.5.3",
     "vue-router": "^4.4.3",
-    "vue-toast-notification": "^3.1.1"
+    "vue-toast-notification": "^3.1.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.4",
