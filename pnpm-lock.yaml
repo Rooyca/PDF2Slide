@@ -15,8 +15,8 @@ importers:
         specifier: ^3.5.3
         version: 3.5.3
       vue-router:
-        specifier: ^4.1.2
-        version: 4.1.2(vue@3.5.3)
+        specifier: ^4.4.3
+        version: 4.4.3(vue@3.5.3)
       vue-toast-notification:
         specifier: ^3.1.1
         version: 3.1.1(vue@3.5.3)
@@ -78,8 +78,8 @@ packages:
   '@vue/compiler-ssr@3.5.3':
     resolution: {integrity: sha512-F/5f+r2WzL/2YAPl7UlKcJWHrvoZN8XwEBLnT7S4BXwncH25iDOabhO2M2DWioyTguJAGavDOawejkFXj8EM1w==}
 
-  '@vue/devtools-api@6.5.0':
-    resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
+  '@vue/devtools-api@6.6.4':
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
 
   '@vue/reactivity@3.5.3':
     resolution: {integrity: sha512-2w61UnRWTP7+rj1H/j6FH706gRBHdFVpIqEkSDAyIpafBXYH8xt4gttstbbCWdU3OlcSWO8/3mbKl/93/HSMpw==}
@@ -421,8 +421,8 @@ packages:
       stylus:
         optional: true
 
-  vue-router@4.1.2:
-    resolution: {integrity: sha512-5BP1qXFncVRwgV/XnqzsKApdMjQPqWIpoUBdL1ynz8HyLxIX/UDAx7Ql2BjmA5CXT/p61JfZvkpiFWFpaqcfag==}
+  vue-router@4.4.3:
+    resolution: {integrity: sha512-sv6wmNKx2j3aqJQDMxLFzs/u/mjA9Z5LCgy6BE0f7yFWMjrPLnS/sPNn8ARY/FXw6byV18EFutn5lTO6+UsV5A==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -496,7 +496,7 @@ snapshots:
       '@vue/compiler-dom': 3.5.3
       '@vue/shared': 3.5.3
 
-  '@vue/devtools-api@6.5.0': {}
+  '@vue/devtools-api@6.6.4': {}
 
   '@vue/reactivity@3.5.3':
     dependencies:
@@ -774,9 +774,9 @@ snapshots:
       fsevents: 2.3.2
       sass: 1.78.0
 
-  vue-router@4.1.2(vue@3.5.3):
+  vue-router@4.4.3(vue@3.5.3):
     dependencies:
-      '@vue/devtools-api': 6.5.0
+      '@vue/devtools-api': 6.6.4
       vue: 3.5.3
 
   vue-toast-notification@3.1.1(vue@3.5.3):
