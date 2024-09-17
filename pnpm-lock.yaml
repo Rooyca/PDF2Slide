@@ -15,8 +15,8 @@ importers:
         specifier: ^3.5.6
         version: 3.5.6
       vue-router:
-        specifier: ^4.4.3
-        version: 4.4.3(vue@3.5.6)
+        specifier: ^4.4.5
+        version: 4.4.5(vue@3.5.6)
       vue-toast-notification:
         specifier: ^3.1.2
         version: 3.1.2(vue@3.5.6)
@@ -421,8 +421,8 @@ packages:
       stylus:
         optional: true
 
-  vue-router@4.4.3:
-    resolution: {integrity: sha512-sv6wmNKx2j3aqJQDMxLFzs/u/mjA9Z5LCgy6BE0f7yFWMjrPLnS/sPNn8ARY/FXw6byV18EFutn5lTO6+UsV5A==}
+  vue-router@4.4.5:
+    resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -774,7 +774,7 @@ snapshots:
       fsevents: 2.3.2
       sass: 1.78.0
 
-  vue-router@4.4.3(vue@3.5.6):
+  vue-router@4.4.5(vue@3.5.6):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.6
