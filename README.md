@@ -32,7 +32,7 @@ This is the frontend of the project PDF2Slide. It's a tool that allows you to co
 ## Demo
 
 - ~You can see a demo here.~
-- Or you can see a showcase [here](https://portafolio.ankladigital.com/)
+- ~Or you can see a showcase here~
 
 ## Technologies Used
 
